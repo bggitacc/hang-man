@@ -60,6 +60,8 @@ function newWord() {
 
     document.getElementById("demo").innerHTML = "<p align='center'>Can You Guess What The Word Is?</p>";
 
+    document.getElementById("userGuess").innerHTML = "<p align='center'></p>";
+
     document.getElementById("hangmanImg").innerHTML = "<img id='hangman' src='assets/images/frame0.jpg'>";
 
 
