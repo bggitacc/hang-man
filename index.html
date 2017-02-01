@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Language Set -->
+<html lang="en" data-locale="en_US">
+  <!-- Page Load Information And Links -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>Hangman Hacker Style</title>
+    
+    
+
+    
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!-- Favicon -->
+    
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA1qugAAAAAAOg1SgAnJ2MAOiLyACYQzACrJDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwEBAQEBAQEBAQEBAQEBAQMBAQEBAQEBBQQFBAEBAQEDAQEBAQEBAQUEBQQBAQEBAwEBAQEBAQEFBAUEAQEBAQMBAQEBAQEBBQQFBAEBAQEDAQEBAQEBAQICAgIBAQEBAwEBAQEBAQEGAgIGAQEBAQMBAQEBAAACBgICBgIAAAEDAQEBAQAAAgIAAAICAAABAwEBAQEBAQEBAAABAQEBAQMBAQEBAQEBAAAAAAEBAQEDAwEBAQEBAQAAAAABAQEBAwMDAQEBAQEBAAABAQEBAQMBAwMBAQEBAQMDAQEBAQEDAQEDAwEBAQEDAwEBAQEBAwMDAwMDAwMDAwMDAwEBAX4HAAB/DwAAfw8AAH8PAAB/DwAAfw8AAH8PAAB4AQAAeAEAAH+fAAB/DwAAPw8AAB+fAABPnwAAZ58AAAAHAAA=" rel="icon" type="image/x-icon" />
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    
+  </head>
+  
+  <!-- Body -->
+  <body>
+    <!-- Page Wrapper -->
+    <div class="wrapper">
+      <!-- Header -->
+      <header>
+        <div class="row">
+          <div class="col">
+            <p align="center"><img class="hdrimage" src="assets/images/header.png"></p>
+          </div>
+        </div>
+      </header>
+      
+      <!-- end of header -->
+      
+      <!-- Body Content -->
+      <section>
+        <!-- Message Row -->
+        <div class="row">
+          <div class="col">
+            <p align="center"><div id="demo"></div></p>
+          </div>
+        </div>
+        <br><br>
+        <!-- Secret Word Row -->
+        <div  class="row swr">
+          <div  class="col">
+            <p align="center"><div id="sw"></div></p>
+          </div>
+        </div>
+        <!-- Missing Letter Row -->
+        <div  class="row">
+          <div id="msg" class="col">
+            <div  id ="userGuess"></div>
+          </div>
+        </div>
+        <!-- Hangman Animation -->
+        <aside id="left">
+          <div class="row">
+            <div class="col">
+              <div align="center" id="hangmanImg"><img id="hangman" src="assets/images/frame0.jpg"></div>
+            </div>
+          </div>
+        </aside>
+        <!-- Score Board -->
+        <aside id="right">
+          <div class="row">
+            <div class="col">
+              <p align="left" class="control">Tries Left : <span  id ="guesses-remaning">8</span></p>
+              <br>
+              <p align="left" class="control">Your Score : <span  id ="winner">0</span></p>
+              <br>
+              <p align="left" class="control">Computer Score : <span  id ="looser">0</span></p>
+            </div>
+          </div>
+
+         
+          <div class="row">
+            <div class="col">
+            <div class="rules">
+            <br><br>
+            <blockquote>
+            <p align="center">Valid entry is<br><br>A - Z Only</p>
+            <br><br>
+            <p align="center">No punctuation Or<br><br>spaces are in<br><br>the word</p>
+
+            </blockquote>
+            </div>
+            </div>
+          </div>
+
+        </aside>
+        <!-- End Of Content -->
+      </section>
+      <!-- Footer Content -->
+      <footer>
+        <div class="col">
+          <div id="footer-content"><p align="center">Copyright © 2017 Brian Gumtz</p></div>
+        </div>
+      </footer>
+    </div>
+    <!-- FLoad Javascript after Page Load -->
+    <script src="assets/javascript/hangman.js"></script>
+  </body>
+  
+</html>

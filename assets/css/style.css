@@ -1,0 +1,131 @@
+
+				/* set box sizing */
+
+* {
+    			box-sizing: border-box;
+}
+				/* Body */
+
+body {
+
+				background: #000;
+				font-family: 'Press Start 2P', cursive;
+				color: #8df603;
+
+				/* Footer */
+
+}
+footer {
+
+				clear: both;
+				height: 40px;
+				font-size: 12px;
+				margin-bottom: 30px;
+				padding-top: 20px;
+}
+
+				/* Page Container */
+
+.wrapper {
+				width: 960px;
+				margin: 0 auto;
+				border: 2px solid #777;
+				margin-top: 30px;
+				background: url('http://il9.picdn.net/shutterstock/videos/13805369/thumb/3.jpg');
+				background-size: cover;
+				margin-bottom: 30px;
+
+}
+				/* Hidden Word */
+
+.hw {
+				color: #8df603;
+				border: 1px solid #8df603;
+				font-size: 28px;
+				padding: 10px;
+				margin-left: 10px;
+				border-radius: 5px;
+				background: #000;
+				
+
+
+
+
+}
+				/* Secret Word */
+.sw {
+
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 30px;
+				height: 60px;
+
+
+}
+				/* Header Image */
+.hdrimage {
+
+				width: 80%;
+}
+
+				/* Left Aside */
+
+#left {
+				float: left;
+				border: 2px solid #777;
+				width: 45%;
+				height: 400px;
+				margin-bottom: 30px;
+				margin-left: 45px;
+				background: #000;
+
+}
+				/* Right Aside */
+#right {
+				float: right;
+				border: 2px solid #777;
+				width: 38%;
+				height: 400px;
+				margin-right: 45px;
+				color: #8df603;
+				padding-top: 20px;
+				background: #000;
+				font-size: 18px;
+				padding-left: 20px;
+
+}
+				/* Hangman Image */			
+#hangman {
+
+				width: 80%;
+
+
+}
+				/* Secret Word Row */	
+.swr {
+
+				height: 100px;
+}
+				/* Messaging */	
+#demo {
+				height: 50px;
+				padding-top: 20px;
+				font-size: 18px;
+	
+}
+				/* User Guess */	
+#userGuess {
+				height: 40px;
+				margin-bottom: 10px;
+				font-size: 18px;
+
+}
+
+.rules {
+				border: 2px solid #777;
+				margin-right: 20px;
+				margin-top: 40px;
+				padding-bottom: 20px;
+				background: #898989;
+				color: #000;
+}
